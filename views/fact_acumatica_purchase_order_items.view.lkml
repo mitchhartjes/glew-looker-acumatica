@@ -9,6 +9,42 @@ view: fact_acumatica_purchase_order_items {
     hidden: yes
   }
 
+  parameter: week_start {
+    type: string
+    allowed_value: {
+      label: "Monday"
+      value: "0 day"
+    }
+    allowed_value: {
+      label: "Tuesday"
+      value: "6 day"
+    }
+    allowed_value: {
+      label: "Wednesday"
+      value: "5 day"
+    }
+    allowed_value: {
+      label: "Thursday"
+      value: "4 day"
+    }
+    allowed_value: {
+      label: "Friday"
+      value: "3 day"
+    }
+    allowed_value: {
+      label: "Saturday"
+      value: "2 day"
+    }
+    allowed_value: {
+      label: "Sunday"
+      value: "1 day"
+    }
+  }
+
+  dimension: alternate_week_start {
+    sql: date_trunc('week', ${requested_date} + interval {% parameter week_start %}) - interval {% parameter week_start %};;
+  }
+
   dimension: account {
     type: string
     sql: ${TABLE}.account ;;
