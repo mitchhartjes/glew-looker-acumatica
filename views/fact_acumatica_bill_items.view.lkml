@@ -21,11 +21,13 @@ view: fact_acumatica_bill_items {
 
   dimension: bill_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.bill_id ;;
   }
 
   dimension: bill_item_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.bill_item_id ;;
   }
 
@@ -47,11 +49,13 @@ view: fact_acumatica_bill_items {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
   dimension: inventory_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 

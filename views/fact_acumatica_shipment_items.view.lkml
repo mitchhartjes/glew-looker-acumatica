@@ -21,16 +21,19 @@ view: fact_acumatica_shipment_items {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
   dimension: inventory_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 
   dimension: location_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.location_id ;;
   }
 
@@ -64,11 +67,13 @@ view: fact_acumatica_shipment_items {
 
   dimension: shipment_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.shipment_id ;;
   }
 
   dimension: shipment_item_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.shipment_item_id ;;
   }
 
@@ -85,6 +90,7 @@ view: fact_acumatica_shipment_items {
 
   dimension: warehouse_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 

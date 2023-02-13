@@ -48,11 +48,13 @@ view: fact_acumatica_order_items {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
   dimension: inventory_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 
@@ -94,11 +96,13 @@ view: fact_acumatica_order_items {
 
   dimension: order_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.order_id ;;
   }
 
   dimension: order_item_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.order_item_id ;;
   }
 
@@ -194,6 +198,7 @@ view: fact_acumatica_order_items {
 
   dimension: warehouse_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 

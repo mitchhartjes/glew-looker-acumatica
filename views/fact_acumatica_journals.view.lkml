@@ -11,6 +11,7 @@ view: fact_acumatica_journals {
 
   dimension: id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -46,6 +47,7 @@ view: fact_acumatica_journals {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
@@ -76,6 +78,7 @@ view: fact_acumatica_journals {
 
   dimension: ledger_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.ledger_id ;;
   }
 

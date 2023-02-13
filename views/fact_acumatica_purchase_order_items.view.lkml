@@ -16,6 +16,7 @@ view: fact_acumatica_purchase_order_items {
 
   dimension: branch_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.branch_id ;;
   }
 
@@ -42,11 +43,13 @@ view: fact_acumatica_purchase_order_items {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
   dimension: inventory_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 
@@ -57,11 +60,13 @@ view: fact_acumatica_purchase_order_items {
 
   dimension: po_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.po_id ;;
   }
 
   dimension: po_item_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.po_item_id ;;
   }
 
@@ -150,6 +155,7 @@ view: fact_acumatica_purchase_order_items {
 
   dimension: warehouse_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 

@@ -28,6 +28,7 @@ view: fact_acumatica_bills {
 
   dimension: bill_id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.bill_id ;;
   }
 
@@ -63,6 +64,7 @@ view: fact_acumatica_bills {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 

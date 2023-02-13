@@ -11,6 +11,7 @@ view: dim_acumatica_subaccounts {
 
   dimension: id {
     type: string
+    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -21,6 +22,7 @@ view: dim_acumatica_subaccounts {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
@@ -36,6 +38,7 @@ view: dim_acumatica_subaccounts {
 
   dimension: subaccount_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.subaccount_id ;;
   }
 
