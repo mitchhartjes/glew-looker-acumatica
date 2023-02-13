@@ -42,7 +42,6 @@ view: fact_acumatica_orders {
 
   dimension: customer_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.customer_id ;;
   }
 
@@ -114,19 +113,16 @@ view: fact_acumatica_orders {
 
   dimension: location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.location_id ;;
   }
 
   dimension: order_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.order_id ;;
   }
 
   dimension: order_number {
     type: string
-    value_format: "0"
     sql: ${TABLE}.order_number ;;
   }
 

@@ -28,7 +28,6 @@ view: fact_acumatica_bills {
 
   dimension: bill_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.bill_id ;;
   }
 

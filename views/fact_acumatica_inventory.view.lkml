@@ -11,7 +11,6 @@ view: fact_acumatica_inventory {
 
   dimension: id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -53,7 +52,6 @@ view: fact_acumatica_inventory {
 
   dimension: inventory_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 

@@ -11,7 +11,6 @@ view: dim_acumatica_customers {
 
   dimension: id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -58,7 +57,6 @@ view: dim_acumatica_customers {
 
   dimension: customer_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.customer_id ;;
   }
 

@@ -79,7 +79,6 @@ view: fact_acumatica_purchase_orders {
 
   dimension: po_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.po_id ;;
   }
 
@@ -152,7 +151,6 @@ view: fact_acumatica_purchase_orders {
 
   dimension: vendor_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.vendor_id ;;
   }
 

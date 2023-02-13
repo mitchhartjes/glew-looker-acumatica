@@ -89,7 +89,6 @@ view: fact_acumatica_invoices {
 
   dimension: invoice_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.invoice_id ;;
   }
 
@@ -120,7 +119,6 @@ view: fact_acumatica_invoices {
 
   dimension: location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.location_id ;;
   }
 

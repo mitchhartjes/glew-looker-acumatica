@@ -11,7 +11,6 @@ view: dim_acumatica_warehouses {
 
   dimension: id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -28,25 +27,21 @@ view: dim_acumatica_warehouses {
 
   dimension: receiving_location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.receiving_location_id ;;
   }
 
   dimension: rma_location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.rma_location_id ;;
   }
 
   dimension: shipping_location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.shipping_location_id ;;
   }
 
   dimension: warehouse_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 

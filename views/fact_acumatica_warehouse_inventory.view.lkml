@@ -11,13 +11,11 @@ view: fact_acumatica_warehouse_inventory {
 
   dimension: default_issue_location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.default_issue_location_id ;;
   }
 
   dimension: default_receipt_location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.default_receipt_location_id ;;
   }
 
@@ -29,7 +27,6 @@ view: fact_acumatica_warehouse_inventory {
 
   dimension: inventory_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 
@@ -51,13 +48,11 @@ view: fact_acumatica_warehouse_inventory {
 
   dimension: warehouse_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 
   dimension: warehouse_inventory_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.warehouse_inventory_id ;;
   }
   measure: sum_of_qty_on_hand {

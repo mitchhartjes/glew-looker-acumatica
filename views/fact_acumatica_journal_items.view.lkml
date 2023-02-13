@@ -16,7 +16,6 @@ view: fact_acumatica_journal_items {
 
   dimension: branch_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.branch_id ;;
   }
 
@@ -50,13 +49,11 @@ view: fact_acumatica_journal_items {
 
   dimension: journal_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.journal_id ;;
   }
 
   dimension: journal_item_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.journal_item_id ;;
   }
 

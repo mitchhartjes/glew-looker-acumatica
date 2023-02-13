@@ -36,7 +36,6 @@ view: fact_acumatica_shipments {
 
   dimension: customer_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.customer_id ;;
   }
 
@@ -115,7 +114,6 @@ view: fact_acumatica_shipments {
 
   dimension: location_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.location_id ;;
   }
 
@@ -161,13 +159,11 @@ view: fact_acumatica_shipments {
 
   dimension: shipment_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.shipment_id ;;
   }
 
   dimension: shipment_number {
     type: string
-    value_format: "0"
     sql: ${TABLE}.shipment_number ;;
   }
 
@@ -184,7 +180,6 @@ view: fact_acumatica_shipments {
 
   dimension: shipping_zone_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.shipping_zone_id ;;
   }
 
@@ -200,7 +195,6 @@ view: fact_acumatica_shipments {
 
   dimension: warehouse_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.warehouse_id ;;
   }
 

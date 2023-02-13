@@ -11,7 +11,6 @@ view: dim_acumatica_accounts {
 
   dimension: id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 

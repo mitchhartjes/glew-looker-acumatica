@@ -45,19 +45,16 @@ view: fact_acumatica_invoice_items {
 
   dimension: inventory_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.inventory_id ;;
   }
 
   dimension: invoice_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.invoice_id ;;
   }
 
   dimension: invoice_item_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.invoice_item_id ;;
   }
 

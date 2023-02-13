@@ -11,7 +11,6 @@ view: dim_acumatica_vendors {
 
   dimension: id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.id ;;
   }
 
@@ -108,7 +107,6 @@ view: dim_acumatica_vendors {
 
   dimension: vendor_id {
     type: string
-    value_format: "0"
     sql: ${TABLE}.vendor_id ;;
   }
 
