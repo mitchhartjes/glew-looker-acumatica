@@ -41,6 +41,10 @@ view: fact_acumatica_order_items {
     }
   }
 
+  dimension: alternate_day_start {
+    sql: to_char(date_trunc('Day',${ship_date} - interval {% parameter week_start %}), 'YYYY-MM-DD') ;;
+  }
+
   dimension: alternate_week_start {
     sql: date_trunc('week', ${ship_date} + interval {% parameter week_start %}) - interval {% parameter week_start %};;
   }

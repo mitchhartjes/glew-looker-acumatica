@@ -41,6 +41,10 @@ view: fact_acumatica_inventory {
     }
   }
 
+  dimension: alternate_day_start {
+    sql: to_char(date_trunc('Day',${last_modified_date} - interval {% parameter week_start %}), 'YYYY-MM-DD') ;;
+  }
+
   dimension: alternate_week_start {
     sql: date_trunc('week', ${last_modified_date} + interval {% parameter week_start %}) - interval {% parameter week_start %};;
   }
