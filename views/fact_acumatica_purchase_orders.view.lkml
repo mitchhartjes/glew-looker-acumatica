@@ -63,6 +63,7 @@ view: fact_acumatica_purchase_orders {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 

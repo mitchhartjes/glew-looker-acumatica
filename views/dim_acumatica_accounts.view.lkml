@@ -21,6 +21,7 @@ view: dim_acumatica_accounts {
 
   dimension: account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.account_id ;;
   }
 
@@ -66,6 +67,7 @@ view: dim_acumatica_accounts {
 
   dimension: glew_account_id {
     type: number
+    value_format: "0"
     sql: ${TABLE}.glew_account_id ;;
   }
 
